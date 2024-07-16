@@ -16,6 +16,7 @@ export default function DeleteCandidateForm({
       .then((data) => {
         if (data.length != 0) {
           window.alert("candidate deleted successfully");
+          setpopForm(0)
         }
       })
       .catch((error) => {
