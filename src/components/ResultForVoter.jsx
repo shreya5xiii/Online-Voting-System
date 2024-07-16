@@ -35,7 +35,7 @@ const [allWinner, setAllwinner] = useState([]);
    const removevoter=()=>{
     localStorage.removeItem("voter_email");
       localStorage.removeItem("voter_name");
-      navigate("/");
+      setshowForm(0)
   }
   
     return (
